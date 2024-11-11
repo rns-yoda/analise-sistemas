@@ -1,10 +1,10 @@
-# Modelo Dinámico
+# Modelo Dinâmico
 Diferenciando de forma prática os conceitos de **eventos** e **estados** do [Sistema de Biblioteca Digital](https://github.com/rns-yoda/analise-sistemas/blob/main/aulas/anexos/diagramaclasse_biblioteca.md)
 usando os três tipos de diagramas: **Diagrama de Sequência**, **Diagrama de Estados** e **Diagrama de Atividades**. 
 Cada um deles ilustrará o fluxo do processo de **empréstimo de um livro**, incluindo como os eventos activam **transições de estados** e o **ciclo de vida das atividades**.
 
 
-### 1. Diagrama de Sequência
+## 1. Diagrama de Sequência
 
 Este diagrama ilustra o fluxo de eventos entre os participantes durante o processo de empréstimo de um livro. Ele mostra como o **usuário**, o **bibliotecário**, o **livro** e o **registro de empréstimo** interagem.
 
@@ -27,10 +27,31 @@ sequenceDiagram
 
 Neste diagrama, os eventos (ex.: *Solicitar Empréstimo*, *Devolver Livro*) desencadeiam ações entre os participantes, representando as mudanças ao longo do processo.
 
----
+## 2. Diagrama de Estados
+#### **Funcionamento**<br>
 
-### 2. Diagrama de Estados
-
+```mermaid
+stateDiagram-v2
+    [*] --> EstadoInicial
+    EstadoInicial --> EmProcessamento: Evento Iniciado
+    note right of EstadoInicial
+        Estado atual do objeto
+        antes do evento
+    end note
+    
+    EmProcessamento --> EstadoFinal: Processamento Concluído
+    note right of EmProcessamento
+        Transição do estado
+        durante o evento
+    end note
+    
+    EstadoFinal --> [*]
+    note right of EstadoFinal
+        Novo estado do objeto
+        após o evento
+    end note
+```
+#### **Implementação** 
 Este diagrama representa o **ciclo de vida de um empréstimo de livro**, mostrando os estados pelos quais o empréstimo pode passar e as transições entre esses estados com base em eventos específicos.
 
 ```mermaid
@@ -46,9 +67,7 @@ Aqui, temos:
 - **Estados** como *Pendente*, *Atrasado* e *Finalizado*.
 - **Eventos** que causam transições, como *Devolução* (mudando de *Pendente* para *Finalizado*) e *Prazo Vencido* (mudando de *Pendente* para *Atrasado*).
 
----
-
-### 3. Diagrama de Atividades
+## 3. Diagrama de Atividades
 
 Este diagrama mostra o **fluxo de atividades** do processo de empréstimo de um livro, desde a solicitação até a devolução, incluindo decisões baseadas na disponibilidade do livro.
 
@@ -67,7 +86,6 @@ No diagrama de atividades:
 - As decisões (ex.: *Livro Disponível* ou *Livro Indisponível*) direcionam o fluxo para os próximos passos.
 
 ---
-
 ### Resumo dos Conceitos nos Diagramas
 
 1. **Diagrama de Sequência**: Mostra a ordem dos **eventos** que levam ao empréstimo de um livro, detalhando a interação entre os participantes.
