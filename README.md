@@ -8,7 +8,6 @@ Bem-vindo ao repositório da disciplina de Análise de Sistemas. Este repositór
 - `/aulas` - Slides e documentos apresentados durante as aulas, incluindo metodologias de análise e casos de uso.
 - `/exercicios` - Listas de exercícios com estudos de caso e modelos de solução.
 - `/projetos` - Projetos de análise e desenvolvimento de sistemas, incluindo diagramas, especificações e documentação.
-- `/materiais` - Materiais de apoio, como leituras recomendadas, tutoriais e guias de boas práticas.
 
 ## Requisitos
 
