@@ -12,9 +12,9 @@ Bem-vindo ao repositório da disciplina de Análise de Sistemas. Este repositór
 
 ## Requisitos
 
-Para acompanhar e praticar com o conteúdo deste repositório, você pode precisar de:
+Para acompanhar e praticar com o conteúdo deste repositório, você pode precisar de uma ferramenta para modelagem (UML):
 
-- [Draw.io](https://app.diagrams.net/), [StarUML](http://staruml.io), (Mermaid)[https://mermaid.js.org/], entre outras...- Ferramentas para modelagem UML (recomendado para criação de diagramas). 
+- [Draw.io](https://app.diagrams.net/), [StarUML](http://staruml.io), [Mermaid](https://mermaid.js.org/), entre outras...
 
 ## Como Clonar o Repositório
 
