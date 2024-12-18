@@ -1,5 +1,5 @@
 ## SOLUÇÃO
-Vamos modelar um **Sistema Básico de Gerenciamento de Reservas de Hotel** com quatro entidades principais. Essa modelagem abrange as seguintes entidades:
+Vamos modelar um [**Sistema Básico de Gerenciamento de Reservas de Hotel**](https://github.com/rns-yoda/analise-sistemas/blob/main/aulas/anexos/sistema_reserva_hotel.md) com quatro entidades principais. Essa modelagem abrange as seguintes entidades:
 
 1. **Hospede**: Representa o cliente que realiza a reserva.
 2. **Quarto**: Representa os quartos disponíveis para reserva.
