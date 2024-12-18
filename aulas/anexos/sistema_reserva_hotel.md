@@ -141,4 +141,5 @@ Vamos detalhar os diagramas para o fluxo de **Realização de Reserva** com os s
 
 ---
 
-### Exercício.
+### Solução do Exercício.
+[Clicar aqui para ver a solução do exercício](https://github.com/rns-yoda/analise-sistemas/blob/main/aulas/anexos/sistema_reserva_hotel%20(SOLU%C3%87%C3%83O)%20.md)
